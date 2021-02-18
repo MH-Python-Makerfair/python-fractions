@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="http://findicons.com/files/icons/2420/coded/256/page_python.png">
 <link rel="apple-touch-icon" href="http://findicons.com/files/icons/2420/coded/256/page_python.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 <title>Makerfair Fractions</title>
   <style>
+    
+  .no-js #loader { display: none;  }
+  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+  .loading-icon {
+	  position: fixed;
+	  left: 0px;
+	  top: 0px;
+	  width: 100%;
+	  height: 100%;
+	  z-index: 9999;
+	  background: url(http://orig09.deviantart.net/ade5/f/2016/231/5/3/loading_by_adachx-daehq7e.gif) center no-repeat #fff;
+    }
+    
     h1 {
       text-align: center;
       font-family: 'Josefin Slab',serif;
@@ -44,7 +63,9 @@
   </style>
 </head>
 <body>
-<div class="pagewrapper">
+  <div class="loading-icon"></div>
+  
+  <div class="pagewrapper">
   <button class="process" onClick="window.location.href='';"><b>The Process ⮟</b></button>
   </div>
 <h1><br><br><br><br>This is called an editor. On the right side is where you can code python, and on the left, is the output of the code. You can use this to follow along with my code and recreate it!</h1>
