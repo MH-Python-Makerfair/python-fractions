@@ -9,23 +9,34 @@
 
 <title>Makerfair Fractions</title>
   <style>
-
+/*  coral hex: #ff7f7f */
+ body {
+    background-image: url("https://onlyvectorbackgrounds.com/wp-content/uploads/2020/06/Simple-Gradient-Background-Navy.jpg") center;
+    background-repeat: no-repeat;
+    }
+    
+    
     h1 {
       text-align: center;
       font-family: 'Josefin Slab',serif;
-      color: #0f3b6e;
+      color: #ff7f7f;
     }  
   
     
   /* actual menu button */
     .dropbtn {
-  background-color: #0f3b6e;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.0);
+  color: #ff7f7f;
   padding: 16px;
   font-size: 16px;
   font-family: sans-serif;
   border: none;
 }
+
+ .dropbtn:after {
+   transform: rotate(360deg) 1s; 
+   animation-duration: 1s;
+    }
     
     .dropbtn:hover {
         cursor: pointer;
