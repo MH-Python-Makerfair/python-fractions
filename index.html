@@ -88,9 +88,11 @@
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f5f5f5; color: #0f3b6e;}
 
-/* Show the dropdown menu on click */
-.dropdown:checked .dropdown-content {display: block;}
-    
+/* javascript myFunction() css:
+
+.dropdown .dropdown-content {display: block;}
+
+*/
 .trinketLink {
     color: white;
       cursor: default;
@@ -100,13 +102,24 @@
         }
 
   </style>
-  
+    <script>
+function firstShowFunction() {
+    document.getElementById('dropdown').style.cssText = 'display: block;';
+}
+        
+function secondShowFunction() {
+    document.getElementById('dropdown-content').style.cssText = 'display: block;';
+}
+function menuAnimFunction() {
+    document.getElementById('dropbtn').style.cssText = 'transform: rotate(90deg); animation-fill-mode: forwards; -webkit-fill-mode: forward; animation-timing-function: linear; animation-duration: 0.3s;';
+}
+    </script>
 </head>
 <body>
   
-  <div class="dropdown">
-  <button class="dropbtn">x</button>
-  <div class="dropdown-content">
+  <div class="dropdown" onClick="firstShowFunction()">
+  <button class="dropbtn" onClick="menuAnimFunction()">x</button>
+  <div class="dropdown-content" onClick="secondShowFunction()">
     <a href="https://mh-python-makerfair.github.io/python-fractions/"><b>Editor</b></a>
     <a href="#"><b>The Process</b></a>
     <a href="#"><b>Source Code</b></a>
