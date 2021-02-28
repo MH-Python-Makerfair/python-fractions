@@ -88,23 +88,11 @@
           cursor: pointer;
         }
 
-  </style>
-    <script>
-function firstShowFunction() {
-    document.getElementById('dropdown').style.cssText = 'display: block;';
-}
-        
-function secondShowFunction() {
-    document.getElementById('dropdown-content').style.cssText = 'display: block;';
-}
-function menuAnimFunction() {
-    document.getElementById('dropbtn').style.cssText = 'transform: rotate(90deg); animation-fill-mode: forwards; -webkit-fill-mode: forward; animation-timing-function: linear; animation-duration: 0.3s;';
-}
-    </script>
+      </style>
 </head>
 <body>
   
-  <div class="dropdown" onClick="firstShowFunction()">
+  <div class="dropdown" onClick="style.cssText='background: red;';">
   <button class="dropbtn" onClick="menuAnimFunction()">x</button>
   <div class="dropdown-content" onClick="secondShowFunction()">
     <a href="https://mh-python-makerfair.github.io/python-fractions/"><b>Editor</b></a>
