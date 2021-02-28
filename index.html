@@ -46,7 +46,7 @@
         cursor: pointer;
     }
     
-   .dropbtn:active {
+   .dropbtn:checked {
         animation-name: menuAnimation;
         animation-timing-function: linear;
         -webkit-animation-fill-mode: forwards;
@@ -89,7 +89,7 @@
 .dropdown-content a:hover {background-color: #f5f5f5; color: #0f3b6e;}
 
 /* Show the dropdown menu on click */
-.dropdown:active .dropdown-content {display: block;}
+.dropdown:checked .dropdown-content {display: block;}
     
 .trinketLink {
     color: white;
@@ -105,7 +105,7 @@
 <body>
   
   <div class="dropdown">
-  <button class="dropbtn">X</button>
+  <button class="dropbtn">x</button>
   <div class="dropdown-content">
     <a href="https://mh-python-makerfair.github.io/python-fractions/"><b>Editor</b></a>
     <a href="#"><b>The Process</b></a>
