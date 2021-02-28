@@ -47,6 +47,9 @@
         transform: rotate(90deg);
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
+        -webkit-fill-mode: forwards;
+        animation-timing-function: linear;
+        animtion-duration: 0.3s;
     }   
 
 /* The container <div> - needed to position the dropdown content */
@@ -68,21 +71,20 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #0f3b6e;
+  color: #ff7f7f;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   font-family: 'Josefin Slab', serif;
+  background-color: rgba(255, 255, 255, 0.0);
+  backdrop-filter: blur(5px);
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f5f5f5; color: #0f3b6e;}
+.dropdown-content a:hover {background-color: rgba(255, 255, 255, 0.0);}
 
-/* javascript myFunction() css:
+.dropdown:hover .dropdown-content {display: block;}
 
-.dropdown .dropdown-content {display: block;}
-
-*/
 .trinketLink {
     color: white;
       cursor: default;
@@ -95,9 +97,9 @@
 </head>
 <body>
   
-  <div class="dropdown" onClick="style.cssText='background: red;';">
-  <button class="dropbtn" onClick="menuAnimFunction()">x</button>
-  <div class="dropdown-content" onClick="secondShowFunction()">
+  <div class="dropdown">
+  <button class="dropbtn">☰</button>
+  <div class="dropdown-content">
     <a href="https://mh-python-makerfair.github.io/python-fractions/"><b>Editor</b></a>
     <a href="#"><b>The Process</b></a>
     <a href="#"><b>Source Code</b></a>
