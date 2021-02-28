@@ -46,7 +46,7 @@
         cursor: pointer;
     }
     
-   .dropbtn::after {
+   .dropbtn:target {
         animation-name: menuAnimation;
         animation-timing-function: linear;
         -webkit-animation-fill-mode: forwards;
@@ -89,7 +89,7 @@
 .dropdown-content a:hover {background-color: #f5f5f5; color: #0f3b6e;}
 
 /* Show the dropdown menu on click */
-.dropdown::after .dropdown-content {display: block;}
+.dropdown:target .dropdown-content {display: block;}
     
 .trinketLink {
     color: white;
