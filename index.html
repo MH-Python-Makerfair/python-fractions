@@ -6,6 +6,7 @@
   
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80">
 
@@ -37,7 +38,7 @@
   color: #ff7f7f;
   padding: 16px;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   animation-name: menuAnimation;
   animation-timing-function: linear;
   animation-duration: 0.3s;
@@ -49,9 +50,8 @@
     }
       
 @keyframes menuAnimation {
-      0%   {transform: translateY(0px)}
-      50%  {transform: translateY(-6px)}
-      100% {transform: translateY(0px)}
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(270deg);}
         }
         
 
@@ -101,7 +101,7 @@
 <body>
   
   <div class="dropdown">
-  <button class="dropbtn">≡</button>
+  <button class="dropbtn">X</button>
   <div class="dropdown-content">
     <a href="https://mh-python-makerfair.github.io/python-fractions/"><b>Editor</b></a>
     <a href="#"><b>The Process</b></a>
